@@ -70,18 +70,17 @@ a#answer {
     color: #D12325;
 }
 
-#links {
+#links a{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 300px;
     padding-left: 15px;
     padding-top: 5px;
-    text-align: left;
+    text-align: center;
     font-size: 10pt;
     z-index: 9999;
-    opacity: 0;
-    display: none;
+    color: #D12325;
+		text-decoration: none;
+		display: none;
     -webkit-transition: 0.5s ease-out;
     -moz-transition: 0.5s ease-out;
     -o-transition: 0.5s ease-out;
