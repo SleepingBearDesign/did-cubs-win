@@ -1,50 +1,18 @@
+@font-face {
+    font-family: 'SansThirteenBlack';
+    src: url('/fonts/sansthirteenblack.eot');
+    src: local('â˜º'), url('/fonts/sansthirteenblack.woff') format('woff'), url('/fonts/sansthirteenblack.ttf') format('truetype'), url('/fonts/sansthirteenblack.svg#webfont180qSKaW') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     text-align: center;
-		background-color: #0E3386;
-}
-h1 {
+    background-color: #0E3386;
+    color: #ffffff;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: bold;
-    line-height: 26.4px;
-}
-
-h3 {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 15.4px;
-}
-
-p {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-blockquote {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-size: 21px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-pre {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-size: 13px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 18.5714px;
 }
 
 .blue {
@@ -62,7 +30,7 @@ pre {
 a#answer {
     display: inline-block;
     margin-top: 200px;
-		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
     font-size: 120pt;
     font-family: Arial, sans-serif;
@@ -70,19 +38,83 @@ a#answer {
     color: #D12325;
 }
 
-#links a{
-    position: fixed;
-    width: 300px;
-    padding-left: 15px;
-    padding-top: 5px;
-    text-align: center;
-    font-size: 10pt;
-    z-index: 9999;
+div#container {
+    width: 920px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+a:link, a:visited {
     color: #D12325;
-		text-decoration: none;
-		display: none;
-    -webkit-transition: 0.5s ease-out;
-    -moz-transition: 0.5s ease-out;
-    -o-transition: 0.5s ease-out;
-    transition: 0.5s ease-out;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+p#answer {
+    margin: 80px 0 0;
+    padding: 0;
+    height: 265px;
+    overflow: hidden;
+    font: normal 288px/288px SansThirteenBlack, Impact, Helvetica, Arial, sans-serif;
+    color: #D12325;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+p#answer strong {
+    font-weight: normal;
+}
+
+hr {
+    color: #D12325;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 385px;
+    height: 50px;
+    border: 0;
+    background: #D12325;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.yes hr {
+    width: 385px;
+}
+
+h2 {
+    padding-top: 42px;
+}
+
+p#comment {
+    margin: 102px 0 0;
+    padding: 0 0 22px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6em;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.yes p#comment {
+    margin-top: 0px;
+}
+
+p#footer {
+    padding: 102px 0 20px;
+    text-align: right;
+    font-size: 0.9em;
 }
