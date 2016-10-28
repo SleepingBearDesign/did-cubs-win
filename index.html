@@ -27,6 +27,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -62,13 +64,17 @@
         <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-        <h2>Need to gear up?</h2>
-        <p>Head over to <a href="https://flythew2016.com" target="_blank">#FlyTheW2016.com</a> to get all your World Series Cubs gear!</p>
-
-        <p id="footer">By <a href="http://www.twitter.com/brody_berson" title="@brody_berson on Twitter">@brody_berson</a></p>
-
+        <div id="bottom">
+            <h2>Need to gear up?</h2>
+            <p>Head over to <a href="https://flythew2016.com" target="_blank">#FlyTheW2016.com</a> to get all your World Series Cubs gear!</p>
+            <p id="footer">By <a href="http://www.twitter.com/brody_berson" title="@brody_berson on Twitter">@brody_berson</a></p>
+        </div>
     </div>
-
+    <script>
+        $(function() {
+            $('#bottom').hide().delay(3000).fadeIn('slow');
+        });
+    </script>
 </body>
 
 </html>
